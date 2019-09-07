@@ -50,7 +50,8 @@ class Main extends PluginBase implements Listener {
 							       $command = "tpui";
 							       $this->getServer->getCommandMap()->dispatch($sender, $command);
 					        }					
-					});					
+					});	
+					
 					$form->setTitle("AdminMenu Screen");
 					$form->setContent("Please choose your destination.");
 					$form->addButton(TextFormat::BOLD . "Main Menu");
