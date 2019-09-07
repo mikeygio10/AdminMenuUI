@@ -12,10 +12,11 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor; 
 use pocketmine\command\ConsoleCommandSender;
 use jojoe77777\FormAPI;
+
 class Main extends PluginBase implements Listener {
     public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getLogger()->info(TextFormat::GREEN . "AdminMenuUI for BrandPE.");
+        $this->getLogger()->info(TextFormat::GREEN . "AdminMenuUI enabled.");
     }	
     public function onDisable() {
         $this->getLogger()->info(TextFormat::RED . "AdminMenuUI disabled.");
@@ -59,7 +60,7 @@ class Main extends PluginBase implements Listener {
 					$form->sendToPlayer($sender);
 					// END				
 				}else{
-				        $sender->sendMessage(TextFormat::RED . "use this command ingame mighty console wielder");
+				        $sender->sendMessage(TextFormat::RED . "Please use this command in-game!");
 			s	}
 			    }
 		        case "tpui":       
@@ -93,7 +94,7 @@ class Main extends PluginBase implements Listener {
 					$form->sendToPlayer($sender);
 					// END				
 				}else{
-				        $sender->sendMessage(TextFormat::RED . "use this command ingame mighty console wielder");
+				        $sender->sendMessage(TextFormat::RED . "Please use this command in-game!");
 				}
 			    }
 			break;		
