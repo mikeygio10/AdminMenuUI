@@ -1,12 +1,12 @@
 name: AdminMenuUI
 main: AdminMenuUI\Main
-api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9]
-version: 1.0
-author: MegaGastPvP
+api: [3.0.0, 4.0.0]
+version: 1.0.0
+author: anirudh246
 commands:
  adminmenu:
     default: op
     aliases: ["am"]
 permissons:
   adminmenu.use:
-    default: op
+    default: false
